@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :models
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -16,7 +15,7 @@ Rails.application.routes.draw do
   
   root 'home#index'
 
-  resources :users, shallow: true do
+  devise_for :users, shallow: true do
     resources :events
     resources :buddies
   end
