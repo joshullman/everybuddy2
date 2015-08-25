@@ -48,7 +48,15 @@ class UserController < ActionController::Base
   end
 
   def user_params
-    params.require(:user).permit(:name, :gender, :username, :password_hash, :email, :about_me, :is_private)
+    params.require(:user).permit(
+    	:name, 
+    	:gender, 
+    	:username, 
+    	:password_hash, 
+    	:email, 
+    	:about_me, 
+    	:is_private
+    	)
   end
 
 end

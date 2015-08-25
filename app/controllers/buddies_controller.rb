@@ -1,4 +1,4 @@
-# class FriendshipController < ActionController::Base
+# class BuddiesController < ActionController::Base
 # 	before_action :authenticate_user!
 # 	before_action :find_user, only: [:show, :edit, :update, :destroy]
 
